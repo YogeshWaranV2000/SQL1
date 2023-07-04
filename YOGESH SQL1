@@ -1,32 +1,28 @@
-Create a database named "University" and switch to that database.
-Create a table named "Students" with the following columns:
-student_id (INT, primary key)
-student_name (VARCHAR(50))
-student_age (INT)
-student_major (VARCHAR(50))
-Insert at least 5 records into the "Students" table with different student details.
-Write a query to retrieve all records from the "Students" table.
-Write a query to retrieve the names of all students majoring in "Computer Science".
-Write a query to retrieve the details of the oldest student in the "Students" table.
-Write a query to update the major of a student with a specific student_id.
-Write a query to delete a student with a specific student_id from the "Students" table.
-INSERT INTO branch VALUES(1,"Chennai","16 ABC Road");
-INSERT INTO branch VALUES(2,"Coimbatore","120 15th Block");
-INSERT INTO branch VALUES(3,"Mumbai","25 XYZ Road");
-INSERT INTO branch VALUES(4,"Hydrabad","32 10th Street");
+/* to create database*/
+create database vnk;
 
-INSERT INTO employee VALUES(1,'Ram','ADMIN',1000000,2);
-INSERT INTO employee VALUES(2,'Harini','MANAGER',2500000,2);
-INSERT INTO employee VALUES(3,'George','SALES',2000000,1);
-INSERT INTO employee VALUES(4,'Ramya','SALES',1300000,2);
-INSERT INTO employee VALUES(5,'Meena','HR',2000000,3);
-INSERT INTO employee VALUES(6,'Ashok','MANAGER',3000000,1);
-INSERT INTO employee VALUES(7,'Abdul','HR',2000000,1);
-INSERT INTO employee VALUES(8,'Ramya','ENGINEER',1000000,2);
-INSERT INTO employee VALUES(9,'Raghu','CEO',8000000,3);
-INSERT INTO employee VALUES(10,'Arvind','MANAGER',2800000,3);
-INSERT INTO employee VALUES(11,'Akshay','ENGINEER',1000000,1);
-INSERT INTO employee VALUES(12,'John','ADMIN',2200000,1);
-INSERT INTO employee VALUES(13,'Abinaya','ENGINEER',2100000,2);
-INSERT INTO employee VALUES(14,'Vidya','ADMIN',2200000,NULL);
-INSERT INTO employee VALUES(15,'Ranjani','ENGINEER',2100000,NULL);
+/* to create a table*/
+create table vnk.sp(
+sl_No int,
+name varchar(20),
+Roll_No int,
+Department varchar(20),
+College_Name varchar(20),
+Place varchar(20));
+
+/to insert the values in table/ 
+insert into vnk.sp values
+(1,"kadhir.S",01,"B.E-Civil","MEC","Rasipuram"),
+(2,"suriya",02,"B.E-Civil","MEC","Rasipuram"),
+(3,"karthi",03,"B.E-Civil","MEC","Rasipuram"),
+(4,"yogi",04,"B.E-Civil","MEC","Rasipuram"),
+(5,"suresh",05,"B.E-Civil","MEC","Rasipuram"),
+(6,"keetz",06,"B.E-Civil","MEC","Rasipuram"),
+(7,"siva",07,"B.E-Civill","MEC","Rasipuram"),
+(8,"sudha",08,"B.E-Civil","MEC","Rasipuram"),
+(9,"sneha",09,"B.E-Civil","MEC","Rasipuram"),
+(10,"sandy",010,"B.E-Civil","MEC","Rasipuram");
+
+/to display a table/
+select * from vnk.sp;
+drop table vnk.sp;
